@@ -501,7 +501,18 @@ section{ padding: 100px 40px; position: relative; }
   letter-spacing: 0.15em;
   color: var(--mute);
   text-transform: uppercase;
-  /* イメージ画像差し込みエリア */
+  overflow: hidden;
+  position: relative;
+}
+.service-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .7s cubic-bezier(.22,1,.36,1);
+}
+.service-item:hover .service-img img{
+  transform: scale(1.03);
 }
 
 /* ===== PROFILE ===== */
@@ -1084,7 +1095,7 @@ footer{
           <p class="service-desc">
             生成AIを業務フローに組み込み、定型作業の自動化からナレッジ運用まで、組織の生産性を底上げします。導入だけで終わらせず、現場が使い続けられる仕組みまで設計します。
           </p>
-          <div class="service-img">[ image / 001 ]</div>
+          <div class="service-img"><img src="service-01.png" alt="AIを活用した業務支援" loading="lazy"></div>
         </div>
       </div>
 
@@ -1098,7 +1109,7 @@ footer{
           <p class="service-desc">
             業務課題に直結する小さなプロダクトを、最短距離で形にします。社内ツール、業務アプリ、自動化スクリプトまで、AIを前提とした設計で爆速で立ち上げます。
           </p>
-          <div class="service-img">[ image / 002 ]</div>
+          <div class="service-img"><img src="service-02.png" alt="デジタルツールの開発" loading="lazy"></div>
         </div>
       </div>
 
@@ -1112,7 +1123,7 @@ footer{
           <p class="service-desc">
             大手広告会社で培ったクリエイティブの基準で、ブランドの世界観から運用クリエイティブまでを一貫して設計。伝わるだけでなく、動かす広告を作ります。
           </p>
-          <div class="service-img">[ image / 003 ]</div>
+          <div class="service-img"><img src="service-03.png" alt="広告デザイン" loading="lazy"></div>
         </div>
       </div>
 
@@ -1126,7 +1137,7 @@ footer{
           <p class="service-desc">
             note、SNS、Web媒体など、自社発信のメディアを企画・編集・運営。コンテンツ制作の知見と、AIを使った継続運用の仕組みで、資産になる発信を作ります。
           </p>
-          <div class="service-img">[ image / 004 ]</div>
+          <div class="service-img"><img src="service-04.png" alt="自社コンテンツの運営" loading="lazy"></div>
         </div>
       </div>
 
@@ -1140,7 +1151,7 @@ footer{
           <p class="service-desc">
             AIを活用したデジタルインフルエンサーの企画・制作・運用。ブランドのストーリーテラーとして、新しい接点と表現を生み出します。
           </p>
-          <div class="service-img">[ image / 005 ]</div>
+          <div class="service-img"><img src="service-05.png" alt="デジタルインフルエンサーの運営" loading="lazy"></div>
         </div>
       </div>
 
@@ -1259,7 +1270,7 @@ footer{
       Let's <em>talk.</em>
     </h2>
     <p class="contact-desc reveal">
-      事業の課題、AIの活用方法、デザインのご相談。<br>
+      事業の課題、AI活用方法、デザインのご相談。<br>
       まずはお気軽にお問い合わせください。<br>初回相談は無料です。
     </p>
     <a href="https://forms.gle/5qgTCPpiwjRnXYD19" class="contact-cta reveal" target="_blank" rel="noopener">
